@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test automtion regression suite"
+	thread-count="3"  parallel="tests" verbose="3">
+
+	<listeners>
+	    <listener class-name="Orangehrm.Listeners.ExtentReportListener" />
+	     <listener class-name="Orangehrm.Listeners.TestAllureListener" />
+	</listeners>
+	
+	<test name="OrangeHRM home page Test">
+	    <classes>
+	       <class name="Orangehrm.Test.OrangeHrmMomePageTest" />
+	    </classes>
+	</test>
+	
+	<test name="OrangeHRM Registration">
+	    <classes>
+	       <class name="Orangehrm.Test.OrangeHrmRegFormPageTest" />
+	    </classes>
+	</test>
+	
+	
+	</suite>
