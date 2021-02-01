@@ -5,19 +5,13 @@
 	thread-count="3"  parallel="tests" verbose="3">
 
 	<listeners>
-	    <listener class-name="Orangehrm.Listeners.ExtentReportListener" />
-	     <listener class-name="Orangehrm.Listeners.TestAllureListener" />
+	    <listener class-name="Freshworks.com.Listeners.ExtentReportListener" />
+	     <listener class-name="Freshworks.com.Listeners.TestAllureListener" />
 	</listeners>
 	
-	<test name="OrangeHRM home page Test">
+	<test name="Freshworks home page Test">
 	    <classes>
-	       <class name="Orangehrm.Test.OrangeHrmMomePageTest" />
-	    </classes>
-	</test>
-	
-	<test name="OrangeHRM Registration">
-	    <classes>
-	       <class name="Orangehrm.Test.OrangeHrmRegFormPageTest" />
+	       <class name="Freshworks.com.Test.Test_freshworks_Home_Page" />
 	    </classes>
 	</test>
 	
