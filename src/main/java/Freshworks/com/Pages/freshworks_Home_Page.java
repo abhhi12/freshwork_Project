@@ -16,6 +16,8 @@ public class freshworks_Home_Page {
 	
 	
 	private By dropdownheader = By.xpath("//ul[@class='l-nav-list nav-main-menu']/li");
+	private By ProductsDropDown = By.xpath("(//ul[@class='l-nav-list nav-main-menu']/li)[1]");
+	private By SubmenuProductsDropDown = By.xpath("//span[text()='Reimagine your cloud-based phone system for businesses of all sizes across 90+ countries.']");
 	
 	
 	public freshworks_Home_Page(WebDriver driver) {
@@ -32,6 +34,13 @@ public class freshworks_Home_Page {
 			ListodDropD.add(ListOfDropDownHeader);
 		}
 		return ListodDropD;
+	}
+	public void doClickProductsDropDown() {
+		try {
+			eleutil.clickOnSubMenu(ProductsDropDown, SubmenuProductsDropDown);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 }
