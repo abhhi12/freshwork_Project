@@ -17,7 +17,7 @@ public class Test_freshworks_Home_Page extends BaseTest{
 		//Assert.assertEquals(ListOfHeader, Constants.getListofheadfrepg());
 	}
 	@Test(priority=2)
-	public void doTest_ClickProductsDropDown() {
+	public void doTest_ClickProductsDropDown() throws InterruptedException {
 		fresghomepg.doClickProductsDropDown();
 	}
 
