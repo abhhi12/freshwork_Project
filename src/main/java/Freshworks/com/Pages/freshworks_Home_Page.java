@@ -35,8 +35,9 @@ public class freshworks_Home_Page {
 		}
 		return ListodDropD;
 	}
-	public void doClickProductsDropDown() throws InterruptedException {
+	public freshcallerPage doClickProductsDropDown() throws InterruptedException {
 			eleutil.clickOnSubMenu(ProductsDropDown, SubmenuProductsDropDown);
+			return new freshcallerPage(driver);
 		
 
 }

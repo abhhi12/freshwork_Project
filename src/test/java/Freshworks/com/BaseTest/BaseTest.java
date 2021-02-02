@@ -7,6 +7,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import Freshworks.com.DriverFactory.DriverFactory;
+import Freshworks.com.Pages.freshcallerPage;
 import Freshworks.com.Pages.freshworks_Home_Page;
 
 public class BaseTest {
@@ -15,6 +16,7 @@ public class BaseTest {
 	DriverFactory df;
 	public Properties prop;
 	public freshworks_Home_Page fresghomepg;
+	public freshcallerPage freshcallerpg;
 	
 	@BeforeTest
 	public void setup() {
@@ -22,6 +24,7 @@ public class BaseTest {
 		prop=df.init_properties();
 		driver=df.init_driver(prop);
 		fresghomepg = new freshworks_Home_Page(driver);
+		freshcallerpg = new freshcallerPage(driver);
 		
 		
 		driver.get(prop.getProperty("url"));

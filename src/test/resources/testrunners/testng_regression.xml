@@ -15,5 +15,11 @@
 	    </classes>
 	</test>
 	
+	<test name="FreshworkCallers home page Test">
+	    <classes>
+	       <class name="Freshworks.com.Test.Test_Freshcallerheadre" />
+	    </classes>
+	</test>
+	
 	
 	</suite>
