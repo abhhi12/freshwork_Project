@@ -15,6 +15,10 @@ public class freshcallerPage {
 	private ElementUtil eleutil;
 	
 	private By Freshcallerheadre = By.xpath("//ul[@class='l-nav-list nav-main-menu']/li");
+	private By Features = By.linkText("Features");
+	private By submenuofFeatures = By.linkText("\r\n"
+			+ "                        Phone Setup\r\n"
+			+ "                      ");
 	
 	
 	
@@ -31,5 +35,8 @@ public class freshcallerPage {
 			stringlist.add(getListofFreshcallerheadre);
 		}
 		return stringlist ;
+	}
+	public void DosubmenuofFeatures() throws InterruptedException {
+		eleutil.clickOnSubMenu(Features, submenuofFeatures);
 	}
 }

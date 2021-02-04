@@ -13,9 +13,13 @@ public class Test_Freshcallerheadre extends BaseTest {
 	public void gotoFreshCallerPage() throws InterruptedException {
 		freshcallerpg=fresghomepg.doClickProductsDropDown();
 	}
-	@Test
+	@Test(priority=1)
 	public void doTesFreshcaller() {
 		List<String> li=freshcallerpg.doFreshcallerheadre();
 		System.out.println("List of header:" +li);
+	}
+	@Test(priority=1)
+	public void doTestFeatures() throws InterruptedException {
+		freshcallerpg.DosubmenuofFeatures();
 	}
 }
