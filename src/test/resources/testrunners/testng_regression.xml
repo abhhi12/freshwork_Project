@@ -15,9 +15,9 @@
 	    </classes>
 	</test>
 	
-	<test name="FreshworkCallers home page Test">
+	<test name="Freshwork SignUp page Test">
 	    <classes>
-	       <class name="Freshworks.com.Test.Test_Freshcallerheadre" />
+	       <class name="Freshworks.com.Test.TestSignUpPage" />
 	    </classes>
 	</test>
 	

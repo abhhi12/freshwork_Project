@@ -18,7 +18,8 @@ public class freshworks_Home_Page {
 	private By dropdownheader = By.xpath("//ul[@class='l-nav-list nav-main-menu']/li");
 	private By ProductsDropDown = By.xpath("(//ul[@class='l-nav-list nav-main-menu']/li)[1]");
 	private By SubmenuProductsDropDown = By.xpath("//span[text()='Reimagine your cloud-based phone system for businesses of all sizes across 90+ countries.']");
-	
+	private By FreshDesk = By.xpath("/html/body/section[2]/div[2]/div/div[1]/div[1]/div[2]/div/div[1]/a/div/img");
+	private By SignUpForFree = By.xpath("//div[@class='pt-sm pb-md']/a");
 	
 	public freshworks_Home_Page(WebDriver driver) {
 		this.driver=driver;
@@ -35,10 +36,18 @@ public class freshworks_Home_Page {
 		}
 		return ListodDropD;
 	}
-	public freshcallerPage doClickProductsDropDown() throws InterruptedException {
+	public void doClickProductsDropDown() throws InterruptedException {
 			eleutil.clickOnSubMenu(ProductsDropDown, SubmenuProductsDropDown);
-			return new freshcallerPage(driver);
-		
-
-}
+     }
+	public SignUpPage doclickFreshDesk() {
+		eleutil.doClick(FreshDesk);
+		eleutil.doClick(SignUpForFree);
+		return new SignUpPage(driver);
+	}
+	
+	
+	
+	
+	
+	
 }

@@ -5,6 +5,8 @@ import java.util.List;
 
 public class Constants {
 	
+	public static final String FRESH_WORK_SHEET_NAME = "Sheet1";
+	
 //	public static List<String> listofheaderogfreshpage;
 //	
 //	public static List<String> getListofheadfrepg() {

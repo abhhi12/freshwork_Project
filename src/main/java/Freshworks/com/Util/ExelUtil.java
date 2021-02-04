@@ -14,7 +14,7 @@ public class ExelUtil {
 	public static Workbook book;
 	public static Sheet sheet;//these are inbult calss in apache API just like String call in Java to give the value or store the data in respective format
 	
-	public static String TEST_DATA_SHEET_PATH = "./src/test/resources/Exel_Word_ECT_TestData/DemoAppTetData.xlsx";
+	public static String TEST_DATA_SHEET_PATH = "./src/test/resources/Exel_Data/FreshWork.xlsx";
 	
 	public static Object[][] getTestData(String SheetName) {
 		Object data[][]=null;
