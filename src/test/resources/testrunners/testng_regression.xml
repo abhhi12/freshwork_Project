@@ -21,5 +21,10 @@
 	    </classes>
 	</test>
 	
+	<test name="Freshwork Window handler FreshCaller page Test">
+	    <classes>
+	       <class name="Freshworks.com.Test.Test_ProductWindowHandlers" />
+	    </classes>
+	</test>
 	
 	</suite>

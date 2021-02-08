@@ -7,7 +7,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import Freshworks.com.DriverFactory.DriverFactory;
+import Freshworks.com.Pages.ProductWindowHandlers;
 import Freshworks.com.Pages.SignUpPage;
+import Freshworks.com.Pages.WindowHandlerPage;
 import Freshworks.com.Pages.freshworks_Home_Page;
 
 public class BaseTest {
@@ -17,6 +19,8 @@ public class BaseTest {
 	public Properties prop;
 	public freshworks_Home_Page fresghomepg;
 	public SignUpPage signup; 
+	public ProductWindowHandlers prowinHand;
+	//public WindowHandlerPage windhandpage;
 	
 	
 	@BeforeTest
@@ -26,6 +30,8 @@ public class BaseTest {
 		driver=df.init_driver(prop);
 		fresghomepg = new freshworks_Home_Page(driver);
 		signup = new SignUpPage(driver);
+		prowinHand = new ProductWindowHandlers(driver);
+		//windhandpage = new WindowHandlerPage();
 		
 		
 		
