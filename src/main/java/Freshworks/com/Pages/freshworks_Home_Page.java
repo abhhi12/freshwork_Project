@@ -48,8 +48,9 @@ public class freshworks_Home_Page {
 		return new SignUpPage(driver);
 	}
 	
-	public void doclickResources() throws InterruptedException {
+	public FreshStratPage doclickResources() throws InterruptedException {
 		eleutil.clickOnSubMenu(Resources, freshstar);
+		return new FreshStratPage(driver);
 	}
 	
 	
