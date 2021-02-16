@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Test automtion regression suite"
-	thread-count="4"  parallel="tests" verbose="3">
+	thread-count="5"  parallel="tests" verbose="3">
 
 	<listeners>
 	    <listener class-name="Freshworks.com.Listeners.ExtentReportListener" />
@@ -24,6 +24,12 @@
 	<test name="Freshwork Window handler FreshCaller page Test">
 	    <classes>
 	       <class name="Freshworks.com.Test.Test_ProductWindowHandlers" />
+	    </classes>
+	</test>
+	
+	<test name=" Freshstart page Test">
+	    <classes>
+	       <class name="Freshworks.com.Test.TestFreshStratPage" />
 	    </classes>
 	</test>
 	
