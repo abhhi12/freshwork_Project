@@ -21,6 +21,9 @@ public class freshworks_Home_Page {
 	private By FreshDesk = By.xpath("/html/body/section[2]/div[2]/div/div[1]/div[1]/div[2]/div/div[1]/a/div/img");
 	private By SignUpForFree = By.xpath("//div[@class='pt-sm pb-md']/a");
 	
+	private By Resources = By.xpath("(//li[@class='nav-main-item caps-heading-12 has-sub-menu    '])[2]");
+	private By freshstar = By.xpath("/html/body/header/nav/div/div/ul/li[4]/ul/li[4]/a");
+	
 	public freshworks_Home_Page(WebDriver driver) {
 		this.driver=driver;
 		eleutil = new ElementUtil(driver);
@@ -43,6 +46,10 @@ public class freshworks_Home_Page {
 		eleutil.doClick(FreshDesk);
 		eleutil.doClick(SignUpForFree);
 		return new SignUpPage(driver);
+	}
+	
+	public void doclickResources() throws InterruptedException {
+		eleutil.clickOnSubMenu(Resources, freshstar);
 	}
 	
 	

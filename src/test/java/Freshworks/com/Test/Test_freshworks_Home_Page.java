@@ -16,5 +16,10 @@ public class Test_freshworks_Home_Page extends BaseTest {
 	public void DoTest_ProductsDropDown() throws InterruptedException {
 		fresghomepg.doClickProductsDropDown();
 	}
+	
+	@Test(priority=3)
+	public void DotestResourceslink() throws InterruptedException {
+		fresghomepg.doclickResources();
+	}
 
 }
